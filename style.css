@@ -1,0 +1,36 @@
+:root {
+    font-family: Corbel, sans-serif;
+
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(55,77,120,1) 66%, rgba(0,0,0,1) 100%);
+    background-repeat: no-repeat;
+    color: #cccccc;
+}
+
+html {
+    margin: 0;
+    height: 100%;
+    text-align: center;
+}
+
+body {
+    position: relative;
+    top: 25%;
+}
+
+h1 {
+    margin-bottom: .5rem;
+}
+h2 {
+    margin-top: 0;
+}
+
+a {
+    color: green;
+}
+a:visited {
+    color: darkmagenta;
+}
+a:hover {
+    color: magenta;
+}
