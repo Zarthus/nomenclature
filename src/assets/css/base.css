@@ -1,0 +1,18 @@
+:root {
+    --c-black: #202324;
+    --c-raisin-black: #1e212b;
+    --c-gunmetal: #262a2c;
+    --c-outer-space: #42494c;
+    --c-celestial-blue: #20a4f3;
+    --c-myrtle-green: #32746d;
+    --c-cambridge-blue: #9ec5ab;
+    --c-light-blue: #9ac2c9;
+    --c-gray: #ebebeb;
+    --c-ghost-white: #ffaff;
+
+    --c-background: var(--c-black);
+    --c-background-lighter: var(--c-gunmetal);
+    --c-background-outline: var(--c-outer-space);
+    --c-text: var(--c-ghost-white);
+    --c-link: var(--c-celestial-blue);
+}

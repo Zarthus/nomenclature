@@ -1,0 +1,19 @@
+{
+    "pagination": {
+        "index": 0,
+        "limit": 100,
+        "next": null,
+        "previous": null
+    },
+
+    "posts": [
+        {
+            "id": "foo",
+            "uri": "/posts/foo",
+            "title": "foo the bar",
+            "published_at": "2023-01-01",
+            "tags": [],
+            "headline": ["foos the bar", "bars the foo", "foobar"]
+        }
+    ]
+}

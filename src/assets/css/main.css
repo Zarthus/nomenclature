@@ -1,0 +1,21 @@
+@import './base.css';
+@import 'vuetify/styles';
+
+body {
+    text-color: var(--c-text);
+    background-color: var(--c-background);
+
+    overflow: clip;
+}
+
+a:link {
+    color: var(--c-link);
+}
+
+a:hover {
+    filter: brightness(125%);
+}
+
+a:visited {
+    filter: brightness(75%);
+}

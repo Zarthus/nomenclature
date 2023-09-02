@@ -1,0 +1,14 @@
+{
+    "version": 1,
+
+    "home": "/",
+    "about": "/about",
+    "values": "/values",
+    "skills": "/skills",
+    "flaws": "/flaws",
+    "posts": "/posts",
+
+    "links": {
+        "posts_list": "/posts.json"
+    }
+}
