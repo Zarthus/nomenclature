@@ -32,12 +32,16 @@ import LatestPost from '../components/LatestPost.vue';
                 </v-row>
                 <v-row>
                     <v-col>
-                        <h2>Skills</h2>
-                        <p><z-link href="/skills">Some of the things I think I'm good at</z-link></p>
+                        <h2>Strengths</h2>
+                        <p><z-link href="/strengths">Some of the things I think I'm good at</z-link></p>
                     </v-col>
                     <v-col>
-                        <h2>Flaws</h2>
-                        <p><z-link href="/flaws">I'm not perfect, here's some of the things I'm not good at</z-link></p>
+                        <h2>Weaknesses</h2>
+                        <p>
+                            <z-link href="/weaknesses"
+                                >I'm not perfect, here's some of the things I'm not good at</z-link
+                            >
+                        </p>
                     </v-col>
                 </v-row>
 

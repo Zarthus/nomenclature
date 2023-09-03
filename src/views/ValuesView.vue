@@ -265,7 +265,8 @@ const values = [
                     <h3>Things don't need to look good to be shipped</h3>
                     <p>
                         This is a value mostly to combat my
-                        <z-link href="flaws#perfectionist">flaw for perfectionism</z-link> and acts as a self-reminder.
+                        <z-link href="weaknesses#perfectionist">flaw for perfectionism</z-link> and acts as a
+                        self-reminder.
                     </p>
                 </v-col>
             </v-row>
@@ -275,8 +276,8 @@ const values = [
                     <h2 id="allow-distractions-when-they-make-sense">Allow Distractions, When They Make Sense</h2>
                     <p>
                         One of my personal
-                        <z-link href="/flaws#scatterbrained">flaws is that I am scatterbrained</z-link>, and I can get
-                        distracted easily, in addition - I NEED distractions to keep myself happy.
+                        <z-link href="/weaknesses#scatterbrained">weaknesses is that I am scatterbrained</z-link>, and I
+                        can get distracted easily, in addition - I NEED distractions to keep myself happy.
                     </p>
                     <p>
                         I usually work in moments of hyperfocus, where I have significant output in a short period (2-4

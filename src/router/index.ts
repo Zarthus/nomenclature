@@ -20,14 +20,14 @@ const router = createRouter({
             component: () => import('../views/ValuesView.vue'),
         },
         {
-            path: '/skills',
-            name: 'skills',
-            component: () => import('../views/SkillsView.vue'),
+            path: '/strengths',
+            name: 'strengths',
+            component: () => import('../views/StrengthsView.vue'),
         },
         {
-            path: '/flaws',
-            name: 'flaws',
-            component: () => import('../views/FlawsView.vue'),
+            path: '/weaknesses',
+            name: 'weaknesses',
+            component: () => import('../views/WeaknessesView.vue'),
         },
         {
             path: '/posts',
