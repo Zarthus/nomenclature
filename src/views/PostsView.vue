@@ -1,7 +1,6 @@
 <script lang="ts" setup>
 const api_response = await fetch('/posts.json');
 const api = await api_response.json();
-console.log(api.posts);
 
 import PostPreview from '../components/PostPreview.vue';
 </script>

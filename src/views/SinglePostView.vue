@@ -1,5 +1,5 @@
 <script setup lang="ts">
-let response: object;
+let response: { posts: Array<{ id: number }> };
 let post: object;
 let post_slug: string;
 let post_id: number;
@@ -13,21 +13,21 @@ try {
 } catch (err: unknown) {
     console.error('Could not infer post from URL', err);
     success = false;
+    // @ts-ignore
     errmsg = err.toString();
 }
 
 if (success) {
     try {
         response = await fetch('/posts.json').then((res) => res.json());
-        post = response.posts.filter((p) => p.id === post_id)[0];
+        post = response.posts.filter((p: { id: number }) => p.id === post_id)[0];
     } catch (err: unknown) {
         console.error(err);
         success = false;
+        // @ts-ignore
         errmsg = err.toString();
     }
 }
-
-console.log(post);
 </script>
 
 <template>
