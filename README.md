@@ -1,5 +1,9 @@
 # about
 
+This is the source code of my website.
+
+It is hosted on liefland.net, which is the primary domain I've owned for a couple of years now.
+
 ## License
 
 Licensed under the following licenses at your option:
