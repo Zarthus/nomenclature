@@ -14,3 +14,7 @@ Licensed under the following licenses at your option:
 Files in the project may not be copied, modified, or distributed except according to those terms.
 
 Creative works are licensed under <[LICENSE-CC0](LICENSE-CC0) or https://creativecommons.org/choose/zero/> unless otherwise specified.
+
+## Attribution
+
+Favicon created by Freepik - Flaticon │ https://www.flaticon.com/ - see their licensing details for more information as it is not CC0.
