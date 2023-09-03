@@ -1,7 +1,54 @@
+<script setup lang="ts">
+let response: object;
+let post: object;
+let post_slug: string;
+let post_id: number;
+let success = true;
+let errmsg: string | null = null;
+
+try {
+    let w = window.location.href.replace('//', '/').split('/');
+    post_slug = w[w.length - 1];
+    post_id = parseInt(post_slug.split('-')[0]);
+} catch (err: unknown) {
+    console.error('Could not infer post from URL', err);
+    success = false;
+    errmsg = err.toString();
+}
+
+if (success) {
+    try {
+        response = await fetch('/posts.json').then((res) => res.json());
+        post = response.posts.filter((p) => p.id === post_id)[0];
+    } catch (err: unknown) {
+        console.error(err);
+        success = false;
+        errmsg = err.toString();
+    }
+}
+
+console.log(post);
+</script>
+
 <template>
-    <div class="about">
-        <h1>This is an about page</h1>
-    </div>
+    <v-container>
+        <v-row>
+            <v-col offset="2" rows="6">
+                <div v-if="!success" class="error">
+                    <h1>This post most likely does not exist.</h1>
+                    <p>See the console for more details.</p>
+                    <p>{{ errmsg }}</p>
+                </div>
+                <div v-else class="post">
+                    <z-post :post="post" />
+                </div>
+            </v-col>
+        </v-row>
+    </v-container>
 </template>
 
-<style scoped></style>
+<style scoped>
+p {
+    margin-top: 1rem;
+}
+</style>

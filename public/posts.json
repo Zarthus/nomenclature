@@ -8,12 +8,13 @@
 
     "posts": [
         {
-            "id": "foo",
-            "uri": "/posts/foo",
-            "title": "foo the bar",
-            "published_at": "2023-01-01",
+            "id": 1,
+            "slug": "001-welcome",
+            "uri": "/posts/001-welcome",
+            "title": "Welcome",
+            "published_at": "2023-03-09",
             "tags": [],
-            "headline": ["foos the bar", "bars the foo", "foobar"]
+            "headline": ["Welcome!"]
         }
     ]
 }

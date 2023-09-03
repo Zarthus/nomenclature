@@ -212,6 +212,15 @@ const values = [
                         When communication is public, such as meeting notes, they should always be in the most common
                         language (which is usually English)
                     </p>
+                    <h3>Respect User Preferences</h3>
+                    <p>
+                        It is important to respect user preferences, as it will assist with being an ally to minority
+                        groups
+                    </p>
+                    <p>
+                        An example: If someone has poor sight and increases the font size of the text, we should respect
+                        that setting and not override it by providing a static value for the whole website.
+                    </p>
                     <h3>A note on Data Driven decisions</h3>
                     <p>
                         Data Driven metrics often are biased towards the majority groups, which is an important fact to
@@ -265,7 +274,7 @@ const values = [
                     <h3>Things don't need to look good to be shipped</h3>
                     <p>
                         This is a value mostly to combat my
-                        <z-link href="weaknesses#perfectionist">flaw for perfectionism</z-link> and acts as a
+                        <z-weakness weakness="Perfectionist">flaw for perfectionism</z-weakness> and acts as a
                         self-reminder.
                     </p>
                 </v-col>
@@ -276,7 +285,7 @@ const values = [
                     <h2 id="allow-distractions-when-they-make-sense">Allow Distractions, When They Make Sense</h2>
                     <p>
                         One of my personal
-                        <z-link href="/weaknesses#scatterbrained">weaknesses is that I am scatterbrained</z-link>, and I
+                        <z-weakness weakness="Scatterbrained">weaknesses is that I am scatterbrained</z-weakness>, and I
                         can get distracted easily, in addition - I NEED distractions to keep myself happy.
                     </p>
                     <p>

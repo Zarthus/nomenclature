@@ -8,9 +8,13 @@ import PostPreview from '../components/PostPreview.vue';
 
 <template>
     <div class="posts">
-        <v-row v-for="post in api.posts" :key="post.id" class="post d-flex align-center flex-column">
-            <post-preview :post="post" />
-        </v-row>
+        <v-container>
+            <v-row v-for="post in api.posts" :key="post.id">
+                <v-col offset="3" cols="6">
+                    <post-preview :post="post" />
+                </v-col>
+            </v-row>
+        </v-container>
     </div>
 
     <v-pagination length="1" id="pagination">

@@ -38,9 +38,9 @@ import LatestPost from '../components/LatestPost.vue';
                     <v-col>
                         <h2>Weaknesses</h2>
                         <p>
-                            <z-link href="/weaknesses"
-                                >I'm not perfect, here's some of the things I'm not good at</z-link
-                            >
+                            <z-link href="/weaknesses">
+                                I'm not perfect, here's some of the things I'm not good at
+                            </z-link>
                         </p>
                     </v-col>
                 </v-row>

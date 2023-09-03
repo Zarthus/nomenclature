@@ -12,9 +12,13 @@ const strengths = ['Transperancy', 'Observant', 'Learner', 'Passion for the Prod
                         Below are a list of items I consider myself to be good at, and although I may still make
                         mistakes - these are typically the things I receive positive feedback on.
                     </p>
+                    <p>
+                        This document assumes you've read or skimmed the <z-link href="/values">Values</z-link> page,
+                        but will make references where it makes sense.
+                    </p>
                     <span v-for="(value, index) in strengths" :key="index" id="strengths-tableofcontents">
-                        <br v-if="index == Math.floor(strengths.length / 2)" />
                         <z-link :href="`#${value.toLowerCase().replace(/[^a-z]+/g, '-')}`"> {{ value }} </z-link>
+                        <br v-if="index == Math.floor(strengths.length / 2)" />
                     </span>
                 </v-col>
             </v-row>
@@ -23,7 +27,7 @@ const strengths = ['Transperancy', 'Observant', 'Learner', 'Passion for the Prod
                 <v-col class="column" offset="2">
                     <h2 id="transperancy">Transperancy</h2>
                     <p>This is directly reflected in my values</p>
-                    <p><z-link href="values#transperancy">Value: Transperancy</z-link></p>
+                    <p><z-value value="Transperancy" /></p>
                 </v-col>
             </v-row>
 
@@ -41,7 +45,7 @@ const strengths = ['Transperancy', 'Observant', 'Learner', 'Passion for the Prod
                     </p>
                     <p>
                         This also applies to systems - combining into
-                        <z-link href="/strengths#passion-for-the-product">Passion for the product</z-link>
+                        <z-strength strength="Passion for the Product" />
                     </p>
                     <h3>Self Aware</h3>
                     <p>
@@ -81,11 +85,16 @@ const strengths = ['Transperancy', 'Observant', 'Learner', 'Passion for the Prod
                     </p>
                     <p>This strength correlates to a few of my values:</p>
                     <p>
-                        <z-link href="/values#be-the-best-version-of-yourself">
-                            Value: Be The Best Version of Yourself
-                        </z-link>
+                        <z-value value="Be The Best Version of Yourself" />
                     </p>
-                    <p><z-link href="/values#iteration">Value: Iteration</z-link></p>
+                    <p>
+                        <z-value value="Iteration" />
+                    </p>
+                    <h3>Passionate</h3>
+                    <p>
+                        Hand in hand with learning comes a great deal of passion for learning new things, expanding
+                        existing horizons, and understanding new points of view.
+                    </p>
                 </v-col>
             </v-row>
 
@@ -113,10 +122,10 @@ const strengths = ['Transperancy', 'Observant', 'Learner', 'Passion for the Prod
                         friends as best as possible when brainstorming about new additions based on data, where it makes
                         sense
                     </p>
-                    <h3>Be Ethical</h3>
+                    <h3>In Values</h3>
                     <p>
-                        While there is no direct value that touches on this strength, a close relationship does exist
-                        for <z-link href="/values#be-ethical">Value: Be Ethical</z-link>
+                        Closely relates to <z-value value="Be Ethical" /> and
+                        <z-value value="Diversity, Inclusion, Belonging" />
                     </p>
                 </v-col>
             </v-row>
@@ -131,10 +140,15 @@ const strengths = ['Transperancy', 'Observant', 'Learner', 'Passion for the Prod
                     <p>
                         I have been very successful in getting things done efficiently, or to inspire other people with
                         getting things across the finish line, whereas my enthousiasm sometimes can also lead to
-                        <z-link href="/weaknesses#impact">lack of significant impact</z-link> or
-                        <z-link href="/weaknesses#scatterbrained">it being a distraction</z-link>, I have learned to
+                        <z-weakness weakness="Impact" /> or <z-weakness weakness="Scatterbrained" />, I have learned to
                         properly timebox these elements to ensure I don't overcommit.
                     </p>
+                    <h3>Efficiency</h3>
+                    <p>
+                        I've been praised for being incredibly efficient in getting things done, and I take pride in
+                        that.
+                    </p>
+                    <p>I'm most effective during morning hours.</p>
                 </v-col>
             </v-row>
         </v-container>
