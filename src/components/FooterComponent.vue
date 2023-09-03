@@ -19,15 +19,6 @@
             </v-btn>
 
             <v-btn icon>
-                <z-link
-                    :external="true"
-                    href="https://linkedin.com/in/josahrens"
-                    icon="mdi-linkedin"
-                    details="LinkedIn Profile"
-                />
-            </v-btn>
-
-            <v-btn icon>
                 <z-link :external="false" href="/posts" icon="mdi-file-document" details="Blog" />
             </v-btn>
 
