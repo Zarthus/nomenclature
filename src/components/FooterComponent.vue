@@ -5,7 +5,7 @@
         <div class="footer-copy">
             <p>
                 Zarthus &middot;
-                <z-link :external="true" href="https://github.com/zarthus/about" icon="mdi-github">Source</z-link>
+                <z-link :external="true" href="https://github.com/zarthus/liefland" icon="mdi-github">Source</z-link>
             </p>
         </div>
 
