@@ -1,6 +1,7 @@
 <script setup lang="ts">
 const values = [
     'Be Kind',
+    'Be Ethical',
     'Be The Best Version of Yourself',
     'Transperancy',
     'Diversity, Inclusion, Belonging',
@@ -17,7 +18,7 @@ const values = [
                     <h2>Values</h2>
                     <p>
                         The below list are values (and subvalues) I subscribe to, things I deem important. They assist
-                        me with decision making. These are personal values.
+                        me with decision making. These are a mixture of personal and professional values.
                     </p>
                     <p>
                         While I try not to compromise on these, life is complicated and best judgment can take
@@ -26,10 +27,11 @@ const values = [
                     <span id="values-tableofcontents" v-for="(value, index) in values" :key="index">
                         <z-link :href="`#${value.toLowerCase().replace(/[^a-z]+/g, '-')}`"> {{ value }} </z-link>
 
-                        <br v-if="index === 2" />
+                        <br v-if="index == Math.floor(values.length / 2)" />
                     </span>
                 </v-col>
             </v-row>
+
             <v-row>
                 <v-col class="column" offset="2">
                     <h2 id="be-kind">Be Kind</h2>
@@ -53,6 +55,56 @@ const values = [
                         or are aligned with my personal values. That's okay, I do not need to like or collaborate with
                         them, but I should respect their point of view.
                     </p>
+                    <h3>A Person is not defined by their work</h3>
+                    <p>
+                        What a person is currently doing is only a small subset of the complexity that is a person, and
+                        not their whole person.
+                    </p>
+                </v-col>
+            </v-row>
+
+            <v-row>
+                <v-col class="column" offset="2">
+                    <h2 id="be-ethical">Be Ethical</h2>
+                    <p>
+                        If something is going to have an adverse negative impact on somebody else, it's important to
+                        consider if the risks outweigh the benefits, and if they don't, it's important to consider a
+                        change in strategy.
+                    </p>
+                    <p>
+                        If something feels unethical, suggest ways to make it better, and allow for mechanisms to be
+                        prioritized that actively guide the user towards awareness of the risks.
+                    </p>
+                    <p>
+                        When something feels unethical, it's important to speak up. That way you can directly influence
+                        a better future.
+                    </p>
+                    <h3>Value integrity, even when nobody is watching</h3>
+                    <p>
+                        The dictionary defines integrity as "the quality of being honest and having strong moral
+                        principles.", and I think that's spot on - it's tempting to take shortcuts when there are no
+                        other participants, but we shouldn't give in to that temptation.
+                    </p>
+                    <h3>Informed Consent</h3>
+                    <p>
+                        It's important that when pulling another party into the mix, they have all the facts up front so
+                        make their own conclusion before comitting to the decision. This will help with better decision
+                        making, but also help with giving context on the bigger picture and ensure smooth collaboration.
+                    </p>
+                    <p>
+                        Note that in some scenarios, consent does not mean agreement: It is okay to disagree with a
+                        strategy but still consent &amp; commit to it.
+                    </p>
+                    <h3>Say No</h3>
+                    <p>
+                        If something makes you uncomfortable, and the other party is unwilling to compromise - say no.
+                        If something actively can be harmful for other people, and the feedback being given is not being
+                        considered, say no.
+                    </p>
+                    <p>
+                        It's about not compromising on what you believe is important. Refusing to do something if they
+                        are not aligned with your values is not a sign of weakness, but a sign of strength.
+                    </p>
                     <h3>Privacy By Design</h3>
                     <p>
                         Privacy is important, and it's important to respect people's privacy. This means not sharing
@@ -63,20 +115,32 @@ const values = [
                         In the things I do in life, I try to minimize the amount of information I collect. When that's
                         not possible, I ensure great care is taken to ensure it is difficult to obtain.
                     </p>
-                    <h3>A Person is not defined by their work</h3>
+                    <h3>Security</h3>
                     <p>
-                        What a person is currently doing is only a small subset of the complexity that is a person, and
-                        not their whole person.
+                        Every company in the world says that security is a top-most priority - and in many cases, it's
+                        not wrong - but the reality is that it would be really bad PR if you said it wasn't. While I'm
+                        sure it's on the list of things to consider for major decisions, you will often see it's not a
+                        default way of thinking, leading to simple mishaps.
                     </p>
-                    <h3>Left-shifted Security</h3>
+                    <p>
+                        The "issue" with security is that the weakest link is often the failing point, and it only takes
+                        a single weakest link for things to fall apart.
+                    </p>
+                    <h4>A note on security shifted to the left</h4>
+                    <p>
+                        We should aim to guarantee at least the very basic of security measurements are in place in the
+                        early development cycle, and take extra efforts to do up-front security rather than after the
+                        fact.
+                    </p>
                 </v-col>
             </v-row>
+
             <v-row>
                 <v-col class="column" offset="2">
                     <h2 id="be-the-best-version-of-yourself">Be The Best Version of Yourself</h2>
                     <p>
-                        This is a very gentle reminder to myself that I should never compare myself to other people.
-                        Life is not a competition with anyone but myself.
+                        This is a very gentle reminder to myself that I should not compare myself to other people. Life
+                        is not a competition with anyone but myself.
                     </p>
                     <p>
                         Comparing myself to others will lead to unhappiness but also uneven playing grounds. Humans are
@@ -87,8 +151,13 @@ const values = [
                         It's important to be kind to. We are all human, and we all make mistakes. It's important to
                         learn from them, but it's also important to not let them define you.
                     </p>
+                    <p>
+                        Try not to let ego take over or assume, and instead ask for clarification when in doubt when it
+                        makes reasonable sense.
+                    </p>
                 </v-col>
             </v-row>
+
             <v-row>
                 <v-col class="column" offset="2">
                     <h2 id="transperancy">Transperancy</h2>
@@ -123,19 +192,15 @@ const values = [
             <v-row>
                 <v-col class="column" offset="2">
                     <h2 id="diversity-inclusion-belonging">Diversity, Inclusion, Belonging</h2>
-                    <h3>Diversity</h3>
-                    <h3>Inclusion</h3>
                     <p>Include people, in conversations, software, and everyday life.</p>
                     <p>There are a lot of minorities, and we typically are blind to those we do not support</p>
                     <p>I try to engage and understand as much as I can, so that I can better support people.</p>
                     <h3>Use inclusive language</h3>
                     <p>Use inclusive pronouns, and use the word "people" to refer to people.</p>
-                    <h3>Belonging</h3>
                     <p>
-                        By following the above values, that should translate into people feeling like the belong, but
-                        that is not guaranteed.
+                        By following the above values, that should translate into people feeling like the belong more,
+                        but that is not guaranteed.
                     </p>
-                    <p>If I notice someone feels uncomfortable or not at home,</p>
                     <h3>Use the defined language everybody in the group speaks</h3>
                     <p>
                         Often it happens people use their native language in groups and then someone passes by that does
@@ -146,6 +211,11 @@ const values = [
                     <p>
                         When communication is public, such as meeting notes, they should always be in the most common
                         language (which is usually English)
+                    </p>
+                    <h3>A note on Data Driven decisions</h3>
+                    <p>
+                        Data Driven metrics often are biased towards the majority groups, which is an important fact to
+                        be aware of.
                     </p>
                     <h3>A note on Privileged Positions</h3>
                     <p>
@@ -160,6 +230,7 @@ const values = [
                     </p>
                 </v-col>
             </v-row>
+
             <v-row>
                 <v-col class="column" offset="2">
                     <h2 id="iteration">Iteration</h2>
@@ -178,7 +249,7 @@ const values = [
                         When you iterate, you get frequent opportunities to respect - what went wrong, what went right?
                         Invaluable questions to ask, which will lead to making better iterations in the future.
                     </p>
-                    <h3 id="when-you-learn-you-do-not-lose">When you learn, you do not lose</h3>
+                    <h3>When you learn, you do not lose</h3>
                     <p>We all make mistakes, and that's okay.</p>
                     <p>
                         It's important to realize we are all human and that mistakes can still converted into wins, or
@@ -191,15 +262,21 @@ const values = [
                             Sunk Cost Fallacy
                         </z-link>
                     </p>
+                    <h3>Things don't need to look good to be shipped</h3>
+                    <p>
+                        This is a value mostly to combat my
+                        <z-link href="flaws#perfectionist">flaw for perfectionism</z-link> and acts as a self-reminder.
+                    </p>
                 </v-col>
             </v-row>
+
             <v-row>
                 <v-col class="column" offset="2">
                     <h2 id="allow-distractions-when-they-make-sense">Allow Distractions, When They Make Sense</h2>
                     <p>
-                        One of my personal <z-link href="/flaws#scatterbrained">flaws</z-link> is that I am relatively
-                        scatterbrained, and I can get distracted easily, in addition - I NEED distractions to keep
-                        myself happy.
+                        One of my personal
+                        <z-link href="/flaws#scatterbrained">flaws is that I am scatterbrained</z-link>, and I can get
+                        distracted easily, in addition - I NEED distractions to keep myself happy.
                     </p>
                     <p>
                         I usually work in moments of hyperfocus, where I have significant output in a short period (2-4

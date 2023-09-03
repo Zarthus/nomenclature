@@ -62,6 +62,12 @@ header nav {
     display: inherit;
 }
 
+.nav-links a.router-link-active,
+.nav-links a.router-link-active:visited {
+    color: var(--c-link);
+    filter: brightness(150%);
+}
+
 .nav-links > a {
     margin: 0.25rem;
     font-size: 1.5rem;

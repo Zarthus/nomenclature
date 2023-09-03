@@ -1,5 +1,13 @@
 <script setup lang="ts">
-const skillset = ['foo', 'bar'];
+const skillset = [
+    'Bias towards Action',
+    'Passion for the Product',
+    'Considering the Minority groups',
+    'Transperancy',
+    'Security',
+    'Debugging',
+    'Self Aware',
+];
 </script>
 
 <template>
