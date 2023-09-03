@@ -1,7 +1,7 @@
 <script setup lang="ts">
-defineProps(['license', 'src', 'alt', 'class', 'id']);
+defineProps(['license', 'src', 'alt', 'classes', 'id']);
 </script>
 
 <template>
-    <img :id="id" :class="class" :alt="`${alt} (licensed under ${license})`" :src="src" />
+    <img :id="id" :class="classes" :alt="`${alt} (licensed under ${license})`" :src="src" />
 </template>

@@ -23,7 +23,7 @@ const values = [
                         While I try not to compromise on these, life is complicated and best judgment can take
                         presidence.
                     </p>
-                    <span id="values-tableofcontents" v-for="(value, index) in values">
+                    <span id="values-tableofcontents" v-for="(value, index) in values" :key="index">
                         <z-link :href="`#${value.toLowerCase().replace(/[^a-z]+/g, '-')}`"> {{ value }} </z-link>
 
                         <br v-if="index === 2" />
@@ -68,6 +68,7 @@ const values = [
                         What a person is currently doing is only a small subset of the complexity that is a person, and
                         not their whole person.
                     </p>
+                    <h3>Left-shifted Security</h3>
                 </v-col>
             </v-row>
             <v-row>

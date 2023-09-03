@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const flaws = ['Perfectionist', 'Overengineering', 'Too Verbose', 'Scatterbrained'];
+const flaws = ['Perfectionist', 'Too Verbose', 'Scatterbrained', 'Impact', 'Poor Heat Resistance'];
 </script>
 
 <template>
@@ -16,7 +16,7 @@ const flaws = ['Perfectionist', 'Overengineering', 'Too Verbose', 'Scatterbraine
                         While I try not to be aware of these, they are flaws because I'm not very good at them, if you
                         observe the following behaviour from me feel free to mention it.
                     </p>
-                    <span id="flaws-tableofcontents" v-for="(flaw, index) in flaws">
+                    <span id="flaws-tableofcontents" v-for="(flaw, index) in flaws" :key="index">
                         <z-link :href="`#${flaw.toLowerCase().replace(/[^a-z]+/g, '-')}`"> {{ flaw }} </z-link>
 
                         <br v-if="index === 2" />

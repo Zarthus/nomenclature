@@ -10,10 +10,9 @@ const skillset = ['foo', 'bar'];
                     <h2>Skillset</h2>
                     <p></p>
                     <p></p>
-                    <span id="skillset-tableofcontents" v-for="(value, index) in skillset">
-                        <z-link :href="`#${value.toLowerCase().replace(/[^a-z]+/g, '-')}`"> {{ value }} </z-link>
-
+                    <span v-for="(value, index) in skillset" :key="index" id="skillset-tableofcontents">
                         <br v-if="index === 2" />
+                        <z-link :href="`#${value.toLowerCase().replace(/[^a-z]+/g, '-')}`"> {{ value }} </z-link>
                     </span>
                 </v-col>
             </v-row>

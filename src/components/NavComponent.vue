@@ -25,7 +25,7 @@ const links = Object.values(api_response).filter((f) => typeof f === 'string');
             </span>
 
             <span class="nav-links">
-                <z-link v-for="link in links" :href="link">{{ link === '/' ? '/home' : link }}</z-link>
+                <z-link v-for="link in links" :href="link" :key="link">{{ link === '/' ? '/home' : link }}</z-link>
             </span>
         </nav>
     </header>
