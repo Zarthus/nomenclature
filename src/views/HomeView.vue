@@ -33,7 +33,7 @@ import LatestPost from '../components/LatestPost.vue';
                 <v-row>
                     <v-col>
                         <h2>Strengths</h2>
-                        <p><z-link href="/strengths">Some of the things I think I'm good at</z-link></p>
+                        <p><z-link href="/strengths">Some of the things I (and others) think I'm good at</z-link></p>
                     </v-col>
                     <v-col>
                         <h2>Weaknesses</h2>
