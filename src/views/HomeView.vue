@@ -73,10 +73,6 @@ main {
 }
 
 .user-info {
-    min-height: 25vh;
-}
-
-.user-info-ext {
-    margin-top: 2rem;
+    min-height: 10vh;
 }
 </style>
