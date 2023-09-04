@@ -1,10 +1,11 @@
 <script setup lang="ts">
 import { computed } from 'vue';
 
-const latest_post = await fetch('/posts.json').then((r) => r.json());
+const all_posts = (await fetch('/posts.json').then((r) => r.json())).posts;
+const reversed = all_posts.reverse();
 
 const post = computed(() => {
-    return latest_post.posts.reverse()[0];
+    return reversed[0];
 });
 </script>
 
