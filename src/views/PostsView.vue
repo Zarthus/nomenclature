@@ -8,7 +8,7 @@ import PostPreview from '../components/PostPreview.vue';
 <template>
     <div class="posts">
         <v-container>
-            <v-row v-for="post in api.posts" :key="post.id">
+            <v-row v-for="post in api.posts.reverse()" :key="post.id">
                 <v-col offset="3" cols="6">
                     <post-preview :post="post" />
                 </v-col>
