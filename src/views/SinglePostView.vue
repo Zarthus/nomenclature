@@ -33,7 +33,7 @@ if (success) {
 <template>
     <v-container>
         <v-row>
-            <v-col offset="2" rows="6">
+            <v-col offset="2" cols="8">
                 <div v-if="!success" class="error">
                     <h1>This post most likely does not exist.</h1>
                     <p>See the console for more details.</p>

@@ -9,7 +9,7 @@ defineProps(['post']);
         <v-card-text>
             <div class="tags" v-if="post.tags.length">
                 Tags:
-                <span v-for="tag in post.tags" :key="tag">
+                <span v-for="tag in post.tags" :key="tag" class="tag">
                     <v-chip>{{ tag }}</v-chip>
                 </span>
             </div>
@@ -24,4 +24,12 @@ defineProps(['post']);
     </v-card>
 </template>
 
-<style scoped></style>
+<style scoped>
+.tag {
+    margin-right: 0.2rem;
+}
+
+p {
+    margin-top: 1rem;
+}
+</style>

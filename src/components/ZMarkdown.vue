@@ -28,8 +28,20 @@ const contents = await fetch('/markdown/' + props.source + '.md').then((r) => r.
     <span class="markdown" v-html="markdown.render(contents)"></span>
 </template>
 
-<style scoped>
-p {
-    margin-bottom: 1rem;
+<style>
+.markdown p {
+    word-wrap: break-word;
+}
+
+.markdown p,
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4 {
+    margin-top: 1rem;
+}
+
+.markdown li {
+    margin-left: 2rem;
 }
 </style>

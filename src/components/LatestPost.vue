@@ -4,7 +4,7 @@ import { computed } from 'vue';
 const latest_post = await fetch('/posts.json').then((r) => r.json());
 
 const post = computed(() => {
-    return latest_post.posts[0];
+    return latest_post.posts.reverse()[0];
 });
 </script>
 

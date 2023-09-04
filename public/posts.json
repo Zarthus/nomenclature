@@ -12,9 +12,22 @@
             "slug": "001-welcome",
             "uri": "/posts/001-welcome",
             "title": "Welcome",
-            "published_at": "2023-03-09",
+            "published_at": "2023-09-03",
             "tags": [],
             "headline": ["Welcome!"]
+        },
+        {
+            "id": 2,
+            "slug": "002-on-being-bold",
+            "uri": "/posts/002-on-being-bold",
+            "title": "On Being Bold",
+            "published_at": "2023-09-04",
+            "tags": ["notes", "productivity"],
+            "headline": [
+                "Not directly a value of mine",
+                "but I do consider it a strength",
+                "There are many ways to phrase this: Being bold, A pioneer, getting things done, etc."
+            ]
         }
     ]
 }
