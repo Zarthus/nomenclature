@@ -37,3 +37,10 @@ jobs:
                   npm install
             - run: |
                   npm run type-check
+
+    json_lint:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+            - run: |
+                  node bin/lint_json.js
