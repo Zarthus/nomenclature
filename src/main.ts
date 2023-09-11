@@ -9,6 +9,7 @@ import * as vuetify_components from 'vuetify/components';
 import * as vuetify_directives from 'vuetify/directives';
 import { aliases, mdi } from 'vuetify/iconsets/mdi';
 import * as common_components from './components/common';
+import Particles from 'vue3-particles';
 
 const vuetify = createVuetify({
     theme: {
@@ -29,4 +30,4 @@ const vuetify = createVuetify({
     },
 });
 
-createApp(App).use(vuetify).use(router).mount('#app');
+createApp(App).use(Particles).use(vuetify).use(router).mount('#app');
