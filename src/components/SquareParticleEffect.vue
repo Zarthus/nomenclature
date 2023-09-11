@@ -3,12 +3,12 @@ declare module 'vue3-particles';
 
 import { loadSlim } from 'tsparticles-slim'; // if you are going to use `loadSlim`, install the "tsparticles-slim" package too.
 
-const particlesInit = async (engine) => {
+const particlesInit = async (engine: any) => {
     //await loadFull(engine);
     await loadSlim(engine);
 };
 
-const particlesLoaded = async (container) => {
+const particlesLoaded = async (container: any) => {
     console.log('Particles container loaded', container);
 };
 </script>
