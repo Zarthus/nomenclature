@@ -2,9 +2,14 @@
 
 ## Supported Versions
 
-| Version    | Supported          |
-| ---------- | ------------------ |
-| latest 0.x | :white_check_mark: |
+| Version | Supported          |
+| ------- | ------------------ |
+| latest  | :white_check_mark: |
+
+## Scope Exclusions
+
+Note that this project is hosted on Cloudflare Pages, as such, some reports may belong to
+https://www.cloudflare.com/en-gb/disclosure/ instead.
 
 ## Reporting a Vulnerability
 
