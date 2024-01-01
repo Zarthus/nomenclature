@@ -34,7 +34,7 @@
         "@vue/eslint-config-prettier": "^8",
         "@vue/eslint-config-typescript": "^12",
         "@vue/test-utils": "^2",
-        "@vue/tsconfig": "^0.4.0",
+        "@vue/tsconfig": "^0.5.1",
         "eslint": "^8",
         "eslint-plugin-vue": "^9",
         "jsdom": "^22",
