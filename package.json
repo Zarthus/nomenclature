@@ -37,7 +37,7 @@
         "@vue/tsconfig": "^0.4.0",
         "eslint": "^8",
         "eslint-plugin-vue": "^9",
-        "jsdom": "^22",
+        "jsdom": "^23",
         "npm-run-all": "^4",
         "prettier": "^3",
         "typescript": "^5",
