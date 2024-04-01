@@ -41,7 +41,7 @@
         "npm-run-all": "^4",
         "prettier": "^3",
         "typescript": "^5",
-        "vite": "^4",
+        "vite": "^5",
         "vitest": "^1.1",
         "vue-tsc": "^1"
     }
